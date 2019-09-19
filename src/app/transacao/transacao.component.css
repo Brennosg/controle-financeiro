@@ -1,0 +1,132 @@
+main {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2em;
+}
+
+main > section {
+  display: flex;
+  justify-content: center;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.adicionando-transacao {
+  order: 1;
+}
+
+.extrato-transacoes {
+  order: 2;
+}
+
+section > form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.adicionando-transacao {
+  border-bottom: 1px solid darkgray; /* colocar na classe adicionando-transacao */
+  padding-bottom: 1em;
+  /* margin-left: 1em;
+  margin-right: 1em; */
+}
+
+.adicionando-transacao > form > label {
+  display: flex;
+  margin-top: 1em;
+}
+
+.adicionando-transacao > form > input {
+  display: flex;
+  min-width: 23.4em;
+  max-width: 24.4em;
+  margin-top: 0.5em;
+  height: 1.7em;
+  border: 1px solid silver;
+  border-radius: 0.4em;
+}
+
+.adicionando-transacao > form > select {
+  min-width: 23.6em;
+  max-width: 24.6em;
+  margin-top: 0.5em;
+  border: 1px solid silver;
+  border-radius: 0.4em;
+  height: 2em;
+}
+
+.button {
+  background: #333;
+  color: white !important;
+  margin-top: 1em !important;
+  height: 2.3em !important;
+  justify-content: center;
+  margin-bottom: 1em;
+  min-width: 23.6em !important;
+  max-width: 24.6em !important;
+}
+
+.extrato-transacoes > section {
+  /* flex-direction: column; */
+  padding-top: 1em;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-bottom: 0.5em;
+  font-weight: bold;
+}
+
+.table-content {
+  display: flex;
+  border-bottom: 1px solid;
+  justify-content: space-between;
+}
+
+.table-content > div {
+  padding-right: 2em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.table-content > .table-content-align {
+  padding-right: 0.5em;
+  margin-left: 2em;
+  text-align: left;
+}
+
+@media all and (max-width: 1024px) {
+  main {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  main > section > form > h2 {
+    margin-top: 0.5em;
+    margin-bottom: 0;
+  }
+
+  /* .adicionando-transacao {
+    border: none!important;
+  } */
+}
+
+@media all and (min-width: 1025px) {
+  main > section {
+    border: 1px solid silver;
+    border-radius: 0.3em;
+  }
+
+  .adicionando-transacao {
+    max-width: 25em;
+    min-width: 22em;
+  }
+}

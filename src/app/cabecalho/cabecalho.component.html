@@ -1,0 +1,24 @@
+<header class="container">
+
+  <h1>Controle Financeiro</h1>
+
+  <picture>
+    <!-- Essas imagens na tag source entram dependendo do tamanho da tela -->
+    <!-- <source media="(min-width: 650px;)" srcset="../../assets/imagens/logotipo.jpg">
+      <source media="(min-width: 465px;)" srcset="../../assets/imagens/logotipo.jpg"> -->
+    <img src="../../assets/imagens/logotipo.jpg" alt="logotipo">
+  </picture>
+
+  <section class="titleTres">
+    <!-- ngClick -->
+    <a (click)="openMenu()" class="menu-icon">
+      <fa name="bars"></fa>
+    </a>
+    <menu-component></menu-component>
+  </section>
+
+</header>
+
+<section>
+  <menu-collapsed></menu-collapsed>
+</section>

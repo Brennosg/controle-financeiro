@@ -1,0 +1,10 @@
+<nav class="menu-collapsed hide">
+  <ul>
+    <li>
+      <fa name="times" (click)="closeMenu()"></fa>
+    </li>
+    <li *ngFor="let itens of menuCollapsedItens">
+      <a href="#">{{ itens }}</a>
+    </li>
+  </ul>
+</nav>

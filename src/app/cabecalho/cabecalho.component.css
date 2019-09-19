@@ -1,0 +1,59 @@
+/* TESTE */
+.container {
+  order: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background: gainsboro;
+  min-height: 4em;
+}
+
+.container > h1 {
+  color: black;
+  order: 1;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.3em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.container > picture {
+  display: flex;
+  align-items: center;
+}
+
+.container > picture > img{
+  max-width: 6.5em;
+}
+
+.titleTres {
+  order: 2;
+  align-self: center;
+
+}
+
+.menu-icon {
+  font-size: 2em;
+  color: black;
+}
+
+@media all and (max-width: 1024px) {
+  .container > picture > img{
+    max-width: 5em!important;
+  }
+  .container > h1 {
+    font-size: 1em;
+  }
+}
+
+@media all and (min-width: 1025px) {
+  .menu-icon {
+    display: none;
+  }
+
+  .menu-collapsed {
+    display: none;
+  }
+}
